@@ -1,0 +1,127 @@
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        #background {
+    background-image: url(https://i.pinimg.com/originals/86/66/85/866685bdd4bbc516ec1a13c956d4d7bf.jpg);
+    background-attachment:fixed;
+    background-color: steelblue;
+}
+
+a {
+    color: lightsteelblue!important;
+    text-decoration: none;
+    font: 600;
+}
+
+body {
+    color: lightskyblue !important;
+    font-family: 'Courier New';
+}
+
+#main {
+    font-family: 'Courier New';
+    border: 1px solid black;
+    background: rgba(33, 31, 57, 0.43);
+}
+
+caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 14px;
+    background-color:dimgrey;
+}
+    </style>
+</head>
+<body id="background">
+<form action="/action" 
+enctype="multipart/form-data" method="POST" id="main" class="py-3 px-3">
+    <label>
+        Имя:
+        <br>
+        <input name="login" value="" placeholder="Введите имя" required="">
+        <br>
+    </label>
+    <br>
+    <label>
+        e-mail:
+        <br>
+        <input name="email" type="email" value="" placeholder="example@erebor.com">
+        <br>
+    </label>
+    <br>
+    <label>
+        Дата рождения:
+        <br>
+        <input name="birth" type="text" value="" placeholder="Здесь был type date" title="Ради валидатора Сергей Генадьевич разрешил юзать text, вместо date">
+        <br>
+    </label>
+    <br>
+    Пол:
+    <br>
+    <label>
+        <input name="sex" type="radio" value="male">
+        Мужской
+    </label>
+    <label>
+        <input name="sex" type="radio" value="female">
+        Женский
+    </label>
+    <label>
+        <input name="sex" type="radio" checked="" value="custom">
+        Я ещё не определилось
+    </label>
+    <br>
+    Количество конечностей:
+    <br>
+    <label>
+        <input name="fang" type="radio" value="1">
+        1
+    </label>
+    <label>
+        <input name="fang" type="radio" value="2">
+        2
+    </label>
+    <label>
+        <input name="fang" type="radio" value="3">
+        3
+    </label>
+    <label>
+        <input name="fang" type="radio" value="4">
+        4
+    </label>
+    <label>
+        <input name="fang" checked="" type="radio" value="more">
+        5 и более
+    </label>
+    <br>
+    <label>
+        Сверхспособности:
+        <br>
+        <select size="4" name="abilities">
+            <option disabled="" title="Будет доступно после познания вселенной">Сдать дисмат с 1 раза на 5</option>
+            <option value="invis">Невидимость</option>
+            <option value="tp">Телепортация</option>
+            <option value="regen">Ускоренная регенерация</option>
+            <option value="food">Вкусно готовить</option>
+            <option disabled="" title="Будет доступно после распятия">Ходить по воде</option>
+        </select>
+    </label>
+    <br>
+    <label>
+        Ваша Биография:
+        <br>
+        <textarea name="fieldBiograph" placeholder="Величайшая история подвигов человека (или не очень человека), случайно забрёдшего в наше захолустье" cols="50" rows="7"></textarea>
+    </label>
+    <br>
+    <label>
+        С контрактом ознакомлен:
+        <input type="checkbox" checked="" name="checkek" required="">
+    </label>
+    <p>
+        Ставя свою подпись, вы принимаете условия компании ООО "Одинокая Гора" и согласны отправиться в путешествие к горе Эребор, а также не имеете никаких притязаний на трон Короля под Горой.
+        Через время после отправки, с Вами свяжется высокий седобородый старец.
+    </p>
+    <input type="submit" value="Отправить">
+</form>
+</body>
+</html>
