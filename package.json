@@ -1,0 +1,19 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "LoL, why we are do this without any guide",
+  "main": "index.js",
+  "scripts": {
+    "test": "lol"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lSKIFERl/why_we_create_server_without_guide.git"
+  },
+  "author": "lSKIFERl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lSKIFERl/why_we_create_server_without_guide/issues"
+  },
+  "homepage": "https://github.com/lSKIFERl/why_we_create_server_without_guide#readme"
+}
