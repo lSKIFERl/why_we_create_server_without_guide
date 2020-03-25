@@ -1,0 +1,98 @@
+#background {
+    background-image: url(https://i.pinimg.com/originals/86/66/85/866685bdd4bbc516ec1a13c956d4d7bf.jpg);
+    background-attachment:fixed;
+    background-color: steelblue;
+}
+
+a {
+    color: lightsteelblue!important;
+    text-decoration: none;
+    font: 600;
+}
+
+header {
+    font-family: 'Courier New';
+    border: 1px solid black;
+    background: rgba(33, 31, 57, 0.43);
+    text-align: left;
+    color: lightslategrey;
+    font: normal small-caps 52px/54px fantasy;
+    height: 32mm;
+}
+
+body {
+    color: lightskyblue !important;
+    font-family: 'Courier New';
+}
+
+footer {
+    border: 1px solid black;
+    background: rgba(33, 31, 57, 0.43);
+    text-align: left;
+    font-family: 'Courier New';
+    font: normal 18px/16px;
+}
+
+#logo {
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    font-family: 'Courier New';
+    border: 1px solid black;
+    background: rgba(33, 31, 57, 0.43);
+    text-align: center;
+    font: 120% bold;
+}
+
+#links {
+    font-family: 'Courier New';
+    border: 1px solid black;
+    background: rgba(33, 31, 57, 0.43);
+}
+
+#main {
+    font-family: 'Courier New';
+    border: 1px solid black;
+    background: rgba(33, 31, 57, 0.43);
+}
+
+.lux {
+    font-family: 'Courier New';
+    border: 1px solid #a52a2a;
+    border-collapse: collapse;
+    color: white;
+    border-spacing: 0;
+    text-align: center;
+}
+
+    .lux th {
+        background: #a52a2a;
+        color: white;
+    }
+
+    .lux td {
+        border-bottom: 1px solid black;
+    }
+
+    .lux td, .lux th {
+        padding: 4px;
+    }
+
+caption {
+    caption-side: top;
+    text-align: center;
+    font-size: 14px;
+    background-color:dimgrey;
+}
+
+tr:nth-child(even) {
+    background: rgba(195, 240, 245, 0.75);
+}
+
+tr:nth-child(odd) {
+    background: rgba(27, 85, 124, 0.75);
+}
