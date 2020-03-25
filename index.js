@@ -20,26 +20,7 @@ app.get("/", function(request, response){
     return response.send("Главная страница");
 });
 
-let json = JSON.stringify(request.body.abilities);
-
-app.post('/action', upload.array(), function(request, response){
-    console.log(request);
-    console.log(request.body); 
-    console.log(request.body.name);
-    return response.redirect("/form");
-},
-connection.execute(
-    "INSERT INTO sql7329391(login,email,birth,sex,fang,abilities,fieldBiograph,checkek) VALUES (?,?,?,?,?,?,?,?)",
-    [json],
-    function (err, results, fields) {
-        console.log(results);
-        console.log(fields);
-        if (err) {
-            return console.error("Ошибка: " + err.message);
-        }
-    }
-)    
-);
+//let json = JSON.stringify(request.body.abilities);
 
 const connection = mysql.createConnection({
     host: "sql7.freemysqlhosting.net",
@@ -56,6 +37,32 @@ const connection = mysql.createConnection({
       }
    });
   
+
+app.post('/action', upload.array(), function(request, response){
+    console.log(request);
+    console.log(request.body); 
+    console.log(request.body.name);
+    const login = request.body.login;
+    const email = request.body.email;
+    const birth = request.body.birth;
+    const sex = request.body.sex;
+    const fang = request.body.fang;
+    const abilitie = request.body.abilitie;
+    const fieldBiograph = request.body.fieldBiograph;
+    const checkek = request.body.checkek;
+    connection.execute(
+        "INSERT INTO sql7329391(login,email,birth,sex,fang,abilitie,fieldBiograph,checkek) VALUES (?,?,?,?,?,?,?,?)",
+        [login,email,birth,sex,fang,abilitie,fieldBiograph,checkek],
+        function (err, results, fields) {
+            console.log(results);
+            console.log(fields);
+            if (err) {
+                return console.error("Ошибка: " + err.message);
+            }
+        }
+    )  ;  
+    return response.redirect("/form");
+});
 
 server.listen(PORT, function() {
 });
